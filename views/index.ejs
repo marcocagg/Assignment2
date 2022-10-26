@@ -2,11 +2,25 @@
 <%- include partials/main_nav.ejs %>
 <!-- Main Content -->
 <main>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Welcome to the <%= title %> page</h1>
-  </div>
-</div>
+    <div id="pfp">  
+      <img src="Assets/images/i.png" alt="ProfilePic">
+    </div>
+
+    <div id="banner">
+      <h1>Welcome!</h1>
+      <h3>Website of Marco Caggianiello</h3>
+    </div>
+    <br> 
+    <!--Image links to social media accounts -->
+    <div id="links">
+      <!--target="_blank" opens link in new tab -->
+      <a href="https://www.linkedin.com/in/marco-caggianiello-587148221/" target="_blank">
+        <img alt="linkedin" src="Assets/images/linkedin.png" width="50" height="50">
+      </a>
+      <a href="https://github.com/marcocagg" target="_blank">
+        <img alt="github" src="Assets/images/github.png" width="50" height="50">
+      </a>
+    </div>
 </main>
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

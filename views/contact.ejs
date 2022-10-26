@@ -1,0 +1,40 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<!-- Main Content -->
+<main>
+  <div id="banner">
+    <h1>Contact Me!</h1>
+  </div>
+  <br>
+
+  <div id="contact">
+    <form action="mailto:marco.caggianiello@ontariotechu.net" Form method="post" ?subject="Website Contact" enctype="text/plain" name="EForm">
+      <p>
+        <label for="name">Enter Your Name:</label><br>
+        <input type="text" placeholder="Ex: Dave Stieb" id="name" size="40" required><br>
+      </p>
+                    
+      <p>
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" placeholder="Ex: dave.stieb@example.com" id="email" size="40" required><br>
+      </p>
+
+      <p>
+        <label for="phone">Enter Your Phone Number:</label><br>
+        <input type="tel" placeholder="Ex: 4165671111" id="phone" size="40" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" notrequired><br>
+      </p>
+
+      <p>
+        <label for="comments">Questions, Comments, Concerns?:</label><br> 
+        <textarea id="comments" placeholder="Enter message here." cols="38" rows="7" required></textarea><br>
+      </p>
+
+      <div id="submitB">
+        <input type="submit" value="Submit">
+      </div>
+
+    </form>
+  </div>
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
