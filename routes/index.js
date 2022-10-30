@@ -25,7 +25,7 @@ router.get('/projects', function(req, res, next) {
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { 
-    title: 'Contact us'
+    title: 'Contact Me'
   });
 });
 
